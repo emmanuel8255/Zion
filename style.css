@@ -1,0 +1,341 @@
+body {
+    background-color: #0f0f0f;
+}
+.container1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 10px;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+    padding-top: 30px;
+    border: #d4af37 solid 1px;
+    width: 95%;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    background-color: #0f0f0f;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nav-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.nav-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.nav-open {
+    margin-left: 50px;
+    color: #d4af37;
+    background-color: #0f0f0f;
+    border-color: #d4af37;
+}
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: auto;
+    left: auto;
+    z-index: 1030;
+}
+.nav-button {
+    color: #d4af37;
+    background-color: #0f0f0f;
+    border-color: #d4af37;
+    display: none;
+    cursor: pointer;
+}
+h1 {
+    color: #d4af37;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+p {
+    color: #b0b0b0;
+    font-family: "Yrsa", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.bi-bag-check {
+    color: #d4af37;
+}
+.brand {
+    display: flex;
+    justify-content: center;
+}
+.shop-icon {
+    display: flex;
+    justify-content: right;
+}
+.nav-items {
+    text-decoration: none;
+    color: #d4af37;
+    font-family: "Yrsa", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.slide {
+    width: 100%;
+    height: 500px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#carousel-nav-buttons-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#carousel-nav-button2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.number-slide {
+    color: #d4af37;
+    text-align: center;
+    margin-top: 10px;
+}
+.dot {
+    cursor: pointer;
+    background-color: #d4af3761;
+    width: 10px;
+    height: 10px;
+    margin: 0 2px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.dot-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.active {
+    background-color: #d4af37;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 10s;
+}
+@keyframes fade {
+    from {opacity: 1}
+    to {opacity: .4}
+}
+.carousel1 {
+    background-image:linear-gradient(rgba(20, 19, 19, 0.324), rgba(18, 17, 17, 0.95)), url(./images/background-image1.jpg);
+}
+.carousel2 {
+    background-image:linear-gradient(rgba(20, 19, 19, 0.436), rgba(18, 17, 17, 0.95)), url(./images/background-image2.jpg);
+}
+.carousel3{
+    background-image:linear-gradient(rgba(15, 14, 14, 0.324), rgba(18, 17, 17, 0.95)), url(./images/background-image4.jpg);
+}
+#carousel-details {
+    margin-top: 200px;
+    text-align: center;
+}
+#carousel-wrapper {
+    width: 100%;
+}
+
+button {
+    color: #d4af37;
+    background-color: #0f0f0f;
+    border: #d4af37 solid 1px;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: "Yrsa", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+#carousel-nav-buttons-wrapper{
+    margin-top: 100px;
+    gap: 10px;
+}
+#carousel-button {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: "Yrsa", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+#shop-men {
+    background-image: url(./images/MODEL2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding-bottom: 20px;
+}
+#shop-women {
+    background-image: url(./images/MODEL1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height:500px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    padding-bottom: 20px;
+}
+.hero-wrapper {
+    margin-top: 50px;
+}
+.sneakers-hero-image {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.831), rgba(255, 255, 255, 0)), url(./images/sneakers1.jpg);
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo-img {
+    height: 100px;
+    width: 100px;
+}
+h5 {
+    color: #d4af37;
+}
+.bd-footer {
+    background-color: #0f0f0f !important;
+    margin: 0;
+}
+.footer-container {
+   background-color: #0f0f0f;
+}
+
+.footer-section {
+    background-color: #0f0f0f;
+}
+.nav-link {
+    color: #d4af37 !important;
+    font-family: "Yrsa", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.nav-p {
+    color:#d4af37 !important;
+    font-family: "Yrsa", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.border-top {
+   border-color: #d4af37 !important;
+}
+.margin-top {
+    margin-top: 100px !important;
+}
+
+@media (max-width:600px) {
+    .nav-bar.responsive {
+        position:relative;
+    }
+    .nav-bar.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .nav-bar.responsive a {
+        float:none;
+        display: block;
+        text-align: left;
+    }
+    .nav-row {
+        display: none;
+    }
+    .nav-button {
+        display: block;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+    .bi-bag-check {
+        color: #d4af37;
+        height: 20px;
+        width: 20px;
+    }
+}
+@media(max-width:567px){
+    #shop-men {
+    background-image: url(./images/MODEL2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding-bottom: 20px;
+}
+
+#shop-women {
+    background-image: url(./images/MODEL1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 300px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    padding-bottom: 20px;
+}
+
+.sneakers-hero-image {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.831), rgba(255, 255, 255, 0)), url(./images/sneakers1.jpg);
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 20px;
+}
+p {
+    font-size: 10px;
+}
+button {
+    font-size: 10px;
+}
+.nav-p {
+    font-size: 10px;
+}
+}
