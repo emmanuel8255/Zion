@@ -1,25 +1,10 @@
 var toggle = "off";
 var slideIndex = 1
-
+$("#navbutton").click(openNav);
 
 showSlides();
 slideNavigator(slideCurrent);
 
-
-
-
-
-
-/*nextButton.click(plusSlides(slideIndex));
-prevButton.click(prevSlide(slideIndex));*/
-
-/*function plusSlides (n) {
-    showSlides(slideIndex += n);
-}
-
-function prevSlide (n) {
-    showSlides(slideIndex -= n);
-}*/
 
 function showSlides () {
     var slides = document.getElementsByClassName("slide");
@@ -39,12 +24,9 @@ function showSlides () {
         showSlides();
     }, 5000);
 
-    
-
 };
 
 
-      
 
 $("#navbutton").click(openNav);
 
